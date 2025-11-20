@@ -1,6 +1,6 @@
 📘 Django Practice Repository – REST APIs, SMTP Email, Authentication & More
 
-echo "# Django-Practice-Repository-1" 
+REPO - Django-Practice-Repository-1
 
 This repository is a complete Django practice project where you learn and implement real-world backend features such as:
 
@@ -175,8 +175,6 @@ You can upload screenshots inside /screenshots/ and display them like:
 ![Contact Page](static/img/screenshots/contact.png)
 ### About Page  
 ![About Page](static/img/screenshots/about.png)
-### Single Page  
-![Login Page](static/img/creenshots/single.png)
 ### API Test
 ![API Test](static/img/screenshots/api_calling.png)
 ### Admin Panel  
