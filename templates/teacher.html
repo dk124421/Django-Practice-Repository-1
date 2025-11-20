@@ -1,0 +1,229 @@
+{% extends 'base.html' %} {% load static %} {% block title %}Teachers{% endblock %} {% block content %}
+
+<!-- Header Start -->
+<div class="container-fluid page-header" style="margin-bottom: 90px">
+  <div class="container">
+    <div
+      class="d-flex flex-column justify-content-center"
+      style="min-height: 300px"
+    >
+      <h3 class="display-4 text-white text-uppercase">Teachers</h3>
+      <div class="d-inline-flex text-white">
+        <p class="m-0 text-uppercase"><a class="text-white" href="">Home</a></p>
+        <i class="fa fa-angle-double-right pt-1 px-3"></i>
+        <p class="m-0 text-uppercase">Teachers</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Header End -->
+
+<!-- Team Start -->
+<div class="container-fluid py-5">
+  <div class="container pt-5 pb-3">
+    <div class="text-center mb-5">
+      <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px">
+        Teachers
+      </h5>
+      <h1>Meet Our Teachers</h1>
+    </div>
+    <div class="row">
+      {% for teacher in teachers %}
+      <div class="col-md-6 col-lg-3 text-center team mb-4">
+        <div class="team-item rounded overflow-hidden mb-2">
+          <div class="team-img position-relative">
+            <img class="img-fluid" src="{{teacher.teacher_img.url }}" alt="" />
+            <div class="team-social">
+              <a class="btn btn-outline-light btn-square mx-1" href="{{teacher.facebook_link}}"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a class="btn btn-outline-light btn-square mx-1" href="{{teacher.linkedin_link}}"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a class="btn btn-outline-light btn-square mx-1" href="{{teacher.twitter_link}}"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div class="bg-secondary p-4">
+            <h5>{{ teacher.teacher_name }}</h5>
+            <p class="m-0">{{teacher.expert_in}}</p>
+          </div>
+        </div>
+      </div>
+      {% empty %}
+        <div class="col-12"><p>No teachers found.</p></div>
+      {% endfor %}
+
+      {% comment %} <div class="col-md-6 col-lg-3 text-center team mb-4">
+        <div class="team-item rounded overflow-hidden mb-2">
+          <div class="team-img position-relative">
+            <img class="img-fluid" src="{% static 'img/team-2.jpg' %}" alt="" />
+            <div class="team-social">
+              <a class="btn btn-outline-light btn-square mx-1" href="#"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a class="btn btn-outline-light btn-square mx-1" href="#"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a class="btn btn-outline-light btn-square mx-1" href="#"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div class="bg-secondary p-4">
+            <h5>Priya Singh</h5>
+            <p class="m-0">Data Science Instructor</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-6 col-lg-3 text-center team mb-4">
+        <div class="team-item rounded overflow-hidden mb-2">
+          <div class="team-img position-relative">
+            <img class="img-fluid" src="{% static 'img/team-3.jpg' %}" alt="" />
+            <div class="team-social">
+              <a class="btn btn-outline-light btn-square mx-1" href="#"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a class="btn btn-outline-light btn-square mx-1" href="#"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a class="btn btn-outline-light btn-square mx-1" href="#"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div class="bg-secondary p-4">
+            <h5>Rahul Mehta</h5>
+            <p class="m-0">UI/UX Designer</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-6 col-lg-3 text-center team mb-4">
+        <div class="team-item rounded overflow-hidden mb-2">
+          <div class="team-img position-relative">
+            <img class="img-fluid" src="{% static 'img/team-4.jpg' %}" alt="" />
+            <div class="team-social">
+              <a class="btn btn-outline-light btn-square mx-1" href="#"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a class="btn btn-outline-light btn-square mx-1" href="#"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a class="btn btn-outline-light btn-square mx-1" href="#"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div class="bg-secondary p-4">
+            <h5>Neha Kapoor</h5>
+            <p class="m-0">Digital Marketing Expert</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-6 col-lg-3 text-center team mb-4">
+        <div class="team-item rounded overflow-hidden mb-2">
+          <div class="team-img position-relative">
+            <img class="img-fluid" src="{% static 'img/team-1.jpg' %}" alt="" />
+            <div class="team-social">
+              <a class="btn btn-outline-light btn-square mx-1" href="#"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a class="btn btn-outline-light btn-square mx-1" href="#"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a class="btn btn-outline-light btn-square mx-1" href="#"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div class="bg-secondary p-4">
+            <h5>Vikram Joshi</h5>
+            <p class="m-0">Cybersecurity Trainer Specialist</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-6 col-lg-3 text-center team mb-4">
+        <div class="team-item rounded overflow-hidden mb-2">
+          <div class="team-img position-relative">
+            <img class="img-fluid" src="{% static 'img/team-2.jpg' %}" alt="" />
+            <div class="team-social">
+              <a class="btn btn-outline-light btn-square mx-1" href="#"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a class="btn btn-outline-light btn-square mx-1" href="#"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a class="btn btn-outline-light btn-square mx-1" href="#"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div class="bg-secondary p-4">
+            <h5>Simran Kaur</h5>
+            <p class="m-0">Cloud Computing Specialist</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-6 col-lg-3 text-center team mb-4">
+        <div class="team-item rounded overflow-hidden mb-2">
+          <div class="team-img position-relative">
+            <img class="img-fluid" src="{% static 'img/team-3.jpg' %}" alt="" />
+            <div class="team-social">
+              <a class="btn btn-outline-light btn-square mx-1" href="#"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a class="btn btn-outline-light btn-square mx-1" href="#"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a class="btn btn-outline-light btn-square mx-1" href="#"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div class="bg-secondary p-4">
+            <h5>Karan Verma</h5>
+            <p class="m-0">Artificial Intelligence Mentor</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-6 col-lg-3 text-center team mb-4">
+        <div class="team-item rounded overflow-hidden mb-2">
+          <div class="team-img position-relative">
+            <img class="img-fluid" src="{% static 'img/team-4.jpg' %}" alt="" />
+            <div class="team-social">
+              <a class="btn btn-outline-light btn-square mx-1" href="#"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a class="btn btn-outline-light btn-square mx-1" href="#"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a class="btn btn-outline-light btn-square mx-1" href="#"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div class="bg-secondary p-4">
+            <h5>Ritika Malhotra</h5>
+            <p class="m-0">Software Testing Instructor</p>
+          </div>
+        </div>
+      </div> {% endcomment %}
+    </div>
+  </div>
+</div>
+<!-- Team End -->
+
+{% endblock %}

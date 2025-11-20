@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You for Contacting eCourses</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background-color: #f4f5f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    .email-container {
+      max-width: 620px;
+      margin: 40px auto;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      overflow: hidden;
+    }
+    .header {
+      background-color: #ff6600;
+      color: #fff;
+      text-align: center;
+      padding: 25px 15px;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 24px;
+      letter-spacing: 1px;
+    }
+    .content {
+      padding: 35px 30px;
+      line-height: 1.8;
+      font-size: 15px;
+    }
+    .content h2 {
+      color: #2b2d42;
+      font-size: 20px;
+      margin-top: 0;
+    }
+    .content p {
+      margin-bottom: 15px;
+    }
+    .highlight {
+      color: #ff6600;
+      font-weight: bold;
+    }
+    .cta {
+      text-align: center;
+      margin: 30px 0;
+    }
+    .cta a {
+      background-color: #ff6600;
+      color: #fff;
+      padding: 12px 25px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    .cta a:hover {
+      background-color: #e65c00;
+    }
+    .footer {
+      background-color: #2b2d42;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      font-size: 13px;
+    }
+    .footer a {
+      color: #ff6600;
+      text-decoration: none;
+    }
+    .text-primary {
+      color: #50290fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="email-container">
+    <div class="header">
+      <h1>Welcome to <span class="text-primary">E</span>COURSES</h1>
+    </div>
+
+    <div class="content">
+      <h2>Hello {{name}},</h2>
+      <p>
+        Thank you for reaching out to <span class="highlight"><span class="text-primary">E</span>COURSES</span> — your trusted platform for online classes and learning excellence.
+      </p>
+      <p>
+        We’ve received your message regarding <strong>“{{subject}}”</strong> and truly appreciate your interest.  
+        Our team is reviewing your request and will get back to you soon with the best possible assistance.
+      </p>
+      <p>
+        Here’s a quick summary of your message:
+      </p>
+      <p style="font-style: italic; background-color: #f9f9f9; padding: 10px 15px; border-left: 4px solid #ff6600; border-radius: 6px;">
+        {{message}}
+      </p>
+      <p>
+        Meanwhile, feel free to explore our wide range of professional online courses — from web and app design to marketing and research — designed to help you grow smarter and faster.
+      </p>
+
+      <div class="cta">
+        <a href="https://yourwebsite.com/courses">Explore Courses</a>
+      </div>
+
+      <p>
+        Best regards,<br>
+        <strong>The <span class="text-primary">E</span>COURSES Team</strong><br>
+        <a href="mailto:sangamuniversity.in.com">sangamuniversity.in.com</a> | +91 7231832913
+      </p>
+    </div>
+
+    <div class="footer">
+      <p>&copy; 2025 ECOURSES | Sangam University, Bhilwara, IND</p>
+      <p><a href="https://yourwebsite.com/privacy">Privacy Policy</a> | <a href="https://yourwebsite.com/contact">Contact Us</a></p>
+    </div>
+  </div>
+</body>
+</html>
