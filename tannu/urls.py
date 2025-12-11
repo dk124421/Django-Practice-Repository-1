@@ -34,8 +34,7 @@ urlpatterns = [
     path("course/", views.course_page, name='course_page'),
     path("teacher/", views.teacher_page, name='teacher_page'),
     path("single/", views.single_page, name='single_page'),
-    path("user-data/", views.user_data, name='user_data')
-    # path("send-email/", views.contact_page, name='send_email')
+    path("user-data/", views.user_data, name='user_data'),
 ]
 
 if settings.DEBUG:

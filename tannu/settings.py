@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-@$1q0%oxu$hf8mou%6hdx-=co!mmd+=z4#1q5fu1r^4oi!*p#t
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -46,7 +46,8 @@ INSTALLED_APPS = [
     "addCourses",
     "addTeachers",
     "addSubject",
-    "addBlog"
+    "addBlog",
+    "rest_framework",
 
 ]
 
